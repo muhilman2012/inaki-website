@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom Sleek Desktop Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+    border: 2px solid #f8fafc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #64748b;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f8fafc;
+}
+
+/* Utility to hide scrollbar on horizontal sub-elements only */
+.scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+/* Book Cover Effects for Publikasi */
+.book-cover-shadow {
+    box-shadow: -8px 12px 28px -4px rgba(15, 23, 42, 0.18), -2px 4px 10px -2px rgba(15, 23, 42, 0.08);
+}
+.book-spine {
+    background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(255,255,255,0.15) 30%, rgba(0,0,0,0.1) 100%);
+}
+
+/* Map Pattern for Kontak Peta Lokasi */
+.map-pattern {
+    background-color: #e5e9ec;
+    background-image: 
+        linear-gradient(rgba(203, 213, 225, 0.45) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(203, 213, 225, 0.45) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
